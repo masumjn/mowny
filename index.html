@@ -224,7 +224,7 @@
                         <input
                           class="form-check-input"
                           type="checkbox"
-                          id="flexSwitchCheckLights"
+                          id="switch1"
                         />
                       </div>
                     </div>
@@ -334,14 +334,14 @@
               <div class="col-md-6 mt-md-0 mt-4">
                 <div class="card bg-gradient-primary h-100">
                   <div class="card-body">
-                    <div class="d-flex mb-3">
+                    <div class="d-flex mb-4">
                       <p class="mb-0 text-white">On</p>
                       <div class="form-check form-switch ms-auto">
                         <input
                           class="form-check-input"
-                          checked=""
                           type="checkbox"
-                          id="flexSwitchCheckTemperature"
+                          id="switch2"
+                          checked
                         />
                       </div>
                     </div>
@@ -402,20 +402,20 @@
                           filterUnits="userSpaceOnUse"
                           color-interpolation-filters="sRGB"
                         >
-                          <feflood
+                          <feFlood
                             flood-opacity="0"
                             result="BackgroundImageFix"
-                          ></feflood>
-                          <feblend
+                          ></feFlood>
+                          <feBlend
                             mode="normal"
                             in="SourceGraphic"
                             in2="BackgroundImageFix"
                             result="shape"
-                          ></feblend>
-                          <fegaussianblur
+                          ></feBlend>
+                          <feGaussianBlur
                             stdDeviation="0.5"
                             result="effect1_foregroundBlur"
-                          ></fegaussianblur>
+                          ></feGaussianBlur>
                         </filter>
                         <filter
                           id="filter1_f"
@@ -426,26 +426,24 @@
                           filterUnits="userSpaceOnUse"
                           color-interpolation-filters="sRGB"
                         >
-                          <feflood
+                          <feFlood
                             flood-opacity="0"
                             result="BackgroundImageFix"
-                          ></feflood>
-                          <feblend
+                          ></feFlood>
+                          <feBlend
                             mode="normal"
                             in="SourceGraphic"
                             in2="BackgroundImageFix"
                             result="shape"
-                          ></feblend>
-                          <fegaussianblur
+                          ></feBlend>
+                          <feGaussianBlur
                             stdDeviation="0"
                             result="effect1_foregroundBlur"
-                          ></fegaussianblur>
+                          ></feGaussianBlur>
                         </filter>
                       </defs>
                     </svg>
-                    <p class="mt-2 mb-0 font-weight-bold text-white">
-                      Temperature
-                    </p>
+                    <p class="mt-4 font-weight-bold mb-0 text-white">Lights</p>
                     <span class="text-xs text-white">Active</span>
                   </div>
                 </div>
@@ -461,7 +459,7 @@
                         <input
                           class="form-check-input"
                           type="checkbox"
-                          id="flexSwitchCheckLights"
+                          id="switch3"
                         />
                       </div>
                     </div>
