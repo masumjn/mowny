@@ -19,19 +19,24 @@
       rel="canonical"
       href="https://www.creative-tim.com/product/soft-ui-dashboard-pro"
     />
-
-
     <link href="style/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style/fontawesome.css">
+    <link rel="stylesheet" href="style/fontawesome.css" />
+    <link
+      id="pagestyle"
+      href="style/soft-ui-dashboard.min.css"
+      rel="stylesheet"
+    />
 
-
-
-    <link id="pagestyle" href="style/soft-ui-dashboard.min.css" rel="stylesheet" />
+    <!-- Theme Bootstrap Icon -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    /> -->
   </head>
 
   <body class="bg-gray-100 px-5 py-3">
-
-    
     <main
       class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ps ps--active-y"
     >
@@ -105,7 +110,11 @@
               <div class="card-header d-flex pb-0 p-3">
                 <h6 class="my-auto">Kamera ESP32-CAM</h6>
                 <div class="nav-wrapper position-relative ms-auto w-25">
-                  <ul class="nav nav-pills nav-fill p-1" role="tablist">
+                  <ul
+                    class="nav nav-pills nav-fill p-1"
+                    disabled
+                    role="tablist"
+                  >
                     <li class="nav-item" role="presentation">
                       <a
                         class="nav-link mb-0 px-0 py-1 active"
@@ -311,7 +320,7 @@
                             result="shape"
                           ></feblend>
                           <fegaussianblur
-                            stdDeviation="10"
+                            stdDeviation="0"
                             result="effect1_foregroundBlur"
                           ></fegaussianblur>
                         </filter>
@@ -333,174 +342,6 @@
                           checked=""
                           type="checkbox"
                           id="flexSwitchCheckTemperature"
-                        />
-                      </div>
-                    </div>
-                    <svg
-                      width="40"
-                      viewBox="0 0 217 342"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g filter="url(#filter3_f)">
-                        <path
-                          d="M67 178.583C93.5097 178.583 115 157.092 115 130.583C115 104.073 93.5097 82.5825 67 82.5825C40.4903 82.5825 19 104.073 19 130.583C19 157.092 40.4903 178.583 67 178.583Z"
-                          fill="white"
-                        ></path>
-                        <path
-                          d="M67 188.583C99.0325 188.583 125 162.615 125 130.583C125 98.55 99.0325 72.5825 67 72.5825C34.9675 72.5825 9 98.55 9 130.583C9 162.615 34.9675 188.583 67 188.583Z"
-                          stroke="white"
-                          stroke-width="10"
-                          stroke-linecap="round"
-                          stroke-dasharray="1 66"
-                        ></path>
-                        <g filter="url(#filter3_f)">
-                          <path
-                            d="M61.6224 120.764C78.6362 111.727 88.2605 96.5543 83.1189 86.8741C77.9773 77.1939 60.0169 76.6723 43.0031 85.7091C25.9894 94.7458 16.3651 109.919 21.5067 119.599C26.6482 129.279 44.6087 129.801 61.6224 120.764Z"
-                            fill="white"
-                          ></path>
-                        </g>
-                      </g>
-                      <g filter="url(#filter2_d)">
-                        <path
-                          d="M83.768 199.054L83.768 63.0005C83.768 53.7179 87.4555 44.8155 94.0192 38.2518C100.583 31.688 109.485 28.0005 118.768 28.0005C128.051 28.0005 136.953 31.688 143.517 38.2518C150.08 44.8155 153.768 53.7179 153.768 63.0005L153.768 201.97C162.845 209.089 169.677 218.673 173.448 229.574C177.219 240.475 177.768 252.232 175.03 263.438C172.291 274.643 166.382 284.822 158.008 292.755C149.634 300.689 139.152 306.041 127.815 308.17C123.7 309.262 119.422 309.601 115.187 309.17C102.415 308.838 90.0831 304.437 79.9858 296.609C69.8886 288.781 62.5533 277.935 59.0477 265.649C55.5422 253.364 56.0495 240.28 60.4957 228.302C64.9419 216.325 73.095 206.079 83.768 199.056V199.054Z"
-                          fill="url(#paint0_linear)"
-                        ></path>
-                        <path
-                          d="M57.7443 249.189C57.7443 257.029 59.257 264.644 62.2406 271.821C65.1226 278.754 69.2556 285.005 74.5247 290.402C77.1201 293.061 79.9789 295.485 83.0218 297.609C86.0911 299.75 89.3762 301.605 92.7861 303.122C99.8678 306.273 107.414 307.971 115.213 308.169L115.251 308.17L115.289 308.174C116.437 308.291 117.607 308.35 118.769 308.35C121.749 308.35 124.707 307.964 127.558 307.203L127.595 307.193L127.632 307.186C134.372 305.929 140.788 303.521 146.701 300.029C152.492 296.61 157.625 292.258 161.958 287.096C166.323 281.896 169.728 276.046 172.078 269.71C174.511 263.153 175.745 256.248 175.745 249.189C175.745 244.564 175.208 239.958 174.149 235.501C173.12 231.169 171.592 226.949 169.607 222.957C167.658 219.036 165.262 215.323 162.485 211.919C159.725 208.536 156.585 205.453 153.151 202.757L152.769 202.457V201.97L152.769 63.0001C152.769 58.4096 151.87 53.957 150.097 49.766C148.385 45.7174 145.933 42.0811 142.81 38.9583C139.688 35.8355 136.051 33.3839 132.003 31.6715C127.812 29.8988 123.359 29 118.769 29C114.178 29 109.726 29.8988 105.535 31.6715C101.486 33.3839 97.8497 35.8355 94.7269 38.9583C91.6041 42.0811 89.1524 45.7174 87.44 49.766C85.6674 53.957 84.7686 58.4096 84.7686 63.0001L84.7686 199.055V199.593L84.3189 199.89C76.3153 205.164 69.6443 212.384 65.0268 220.769C62.6796 225.031 60.8688 229.575 59.6449 234.275C58.3838 239.117 57.7443 244.135 57.7443 249.189ZM56.7443 249.189C56.7443 228.231 67.4872 209.785 83.7686 199.055L83.7686 63.0001C83.7686 43.6699 99.4385 28 118.769 28C138.099 28 153.769 43.6699 153.769 63.0001L153.769 201.97C167.757 212.955 176.745 230.023 176.745 249.189C176.745 278.544 155.665 302.975 127.816 308.169C124.93 308.94 121.898 309.35 118.769 309.35C117.559 309.35 116.366 309.289 115.188 309.169C82.7694 308.344 56.7443 281.806 56.7443 249.189Z"
-                          fill="white"
-                          fill-opacity="0.5"
-                        ></path>
-                      </g>
-                      <path
-                        d="M72.6179 250.554C72.616 242.091 74.9489 233.792 79.3597 226.569C83.7705 219.347 90.0883 213.481 97.6179 209.617V85.5544H139.618V209.616C146.888 213.347 153.032 218.946 157.421 225.838C161.809 232.73 164.282 240.667 164.586 248.832C164.89 256.998 163.014 265.096 159.15 272.296C155.286 279.495 149.574 285.536 142.602 289.796C135.63 294.056 127.648 296.382 119.479 296.535C111.31 296.688 103.247 294.662 96.1202 290.666C88.9933 286.67 83.0595 280.848 78.9288 273.798C74.7982 266.748 72.6199 258.725 72.6179 250.554Z"
-                        fill="white"
-                      ></path>
-                      <defs>
-                        <filter
-                          id="filter30_f"
-                          x="2"
-                          y="65.5825"
-                          width="130"
-                          height="130"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB"
-                        >
-                          <feflood
-                            flood-opacity="0"
-                            result="BackgroundImageFix"
-                          ></feflood>
-                          <feblend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="BackgroundImageFix"
-                            result="shape"
-                          ></feblend>
-                          <fegaussianblur
-                            stdDeviation="1"
-                            result="effect1_foregroundBlur"
-                          ></fegaussianblur>
-                        </filter>
-                        <filter
-                          id="filter30_f"
-                          x="0.122314"
-                          y="59.2585"
-                          width="104.381"
-                          height="87.9562"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB"
-                        >
-                          <feflood
-                            flood-opacity="0"
-                            result="BackgroundImageFix"
-                          ></feflood>
-                          <feblend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="BackgroundImageFix"
-                            result="shape"
-                          ></feblend>
-                          <fegaussianblur
-                            stdDeviation="10"
-                            result="effect1_foregroundBlur"
-                          ></fegaussianblur>
-                        </filter>
-                        <filter
-                          id="filter2_d"
-                          x="36.7441"
-                          y="0"
-                          width="180.001"
-                          height="341.351"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB"
-                        >
-                          <feflood
-                            flood-opacity="0"
-                            result="BackgroundImageFix"
-                          ></feflood>
-                          <fecolormatrix
-                            in="SourceAlpha"
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                          ></fecolormatrix>
-                          <feoffset dx="10" dy="2"></feoffset>
-                          <fegaussianblur stdDeviation="15"></fegaussianblur>
-                          <fecolormatrix
-                            type="matrix"
-                            values="0 0 0 0 0.501961 0 0 0 0 0.501961 0 0 0 0 0.501961 0 0 0 0.302 0"
-                          ></fecolormatrix>
-                          <feblend
-                            mode="normal"
-                            in2="BackgroundImageFix"
-                            result="effect1_dropShadow"
-                          ></feblend>
-                          <feblend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_dropShadow"
-                            result="shape"
-                          ></feblend>
-                        </filter>
-                        <lineargradient
-                          id="paint0_linear"
-                          x1="161.625"
-                          y1="141.948"
-                          x2="43.5768"
-                          y2="169.912"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop
-                            offset="1"
-                            stop-color="white"
-                            stop-opacity="0.596"
-                          ></stop>
-                          <stop
-                            offset="1"
-                            stop-color="#F7F7F7"
-                            stop-opacity="0.204"
-                          ></stop>
-                        </lineargradient>
-                      </defs>
-                    </svg>
-                    <p class="mt-2 mb-0 font-weight-bold text-white">
-                      Temperature
-                    </p>
-                    <span class="text-xs text-white">Active</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="col-md-6">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <div class="d-flex mb-4">
-                      <p class="mb-0">Off</p>
-                      <div class="form-check form-switch ms-auto">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="flexSwitchCheckLights"
                         />
                       </div>
                     </div>
@@ -596,9 +437,129 @@
                             result="shape"
                           ></feblend>
                           <fegaussianblur
-                            stdDeviation="10"
+                            stdDeviation="0"
                             result="effect1_foregroundBlur"
                           ></fegaussianblur>
+                        </filter>
+                      </defs>
+                    </svg>
+                    <p class="mt-2 mb-0 font-weight-bold text-white">
+                      Temperature
+                    </p>
+                    <span class="text-xs text-white">Active</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="d-flex mb-4">
+                      <p class="mb-0">Off</p>
+                      <div class="form-check form-switch ms-auto">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="flexSwitchCheckLights"
+                        />
+                      </div>
+                    </div>
+                    <svg
+                      width="72"
+                      viewBox="0 0 301 157"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#filter0_f)">
+                        <mask
+                          mask-type="alpha"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="301"
+                          height="156"
+                        >
+                          <rect width="301" height="156" fill="#C4C4C4"></rect>
+                        </mask>
+                        <g mask="url(#mask0)">
+                          <path
+                            d="M150 250.825C209.094 250.825 257 202.92 257 143.825C257 84.7307 209.094 36.8252 150 36.8252C90.9055 36.8252 43 84.7307 43 143.825C43 202.92 90.9055 250.825 150 250.825Z"
+                            fill="#CED4DA"
+                          ></path>
+                          <path
+                            d="M150 277.825C224.006 277.825 284 217.831 284 143.825C284 69.819 224.006 9.8252 150 9.8252C75.9938 9.8252 16 69.819 16 143.825C16 217.831 75.9938 277.825 150 277.825Z"
+                            stroke="#CED4DA"
+                            stroke-width="10"
+                            stroke-linecap="round"
+                            stroke-dasharray="1 66"
+                          ></path>
+                          <g filter="url(#filter1_f)">
+                            <path
+                              d="M135.743 126.588C166.447 110.28 183.244 81.824 173.262 63.0298C163.28 44.2355 130.297 42.22 99.5936 58.528C68.8901 74.8359 52.0924 103.292 62.0748 122.086C72.0573 140.88 105.04 142.896 135.743 126.588Z"
+                              fill="white"
+                            ></path>
+                          </g>
+                          <path
+                            d="M182 143.435H122V156.435H182V143.435Z"
+                            fill="white"
+                          ></path>
+                          <path
+                            d="M6.5 151.935H124.063L151.927 133.325L180.5 151.935H294.5"
+                            stroke="#CED4DA"
+                            stroke-width="10"
+                            stroke-linecap="round"
+                          ></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <filter
+                          id="filter0_f"
+                          x="0.5"
+                          y="3.8252"
+                          width="300"
+                          height="153.175"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feFlood
+                            flood-opacity="0"
+                            result="BackgroundImageFix"
+                          ></feFlood>
+                          <feBlend
+                            mode="normal"
+                            in="SourceGraphic"
+                            in2="BackgroundImageFix"
+                            result="shape"
+                          ></feBlend>
+                          <feGaussianBlur
+                            stdDeviation="0.5"
+                            result="effect1_foregroundBlur"
+                          ></feGaussianBlur>
+                        </filter>
+                        <filter
+                          id="filter1_f"
+                          x="24"
+                          y="9"
+                          width="187.337"
+                          height="167.116"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feFlood
+                            flood-opacity="0"
+                            result="BackgroundImageFix"
+                          ></feFlood>
+                          <feBlend
+                            mode="normal"
+                            in="SourceGraphic"
+                            in2="BackgroundImageFix"
+                            result="shape"
+                          ></feBlend>
+                          <feGaussianBlur
+                            stdDeviation="0"
+                            result="effect1_foregroundBlur"
+                          ></feGaussianBlur>
                         </filter>
                       </defs>
                     </svg>
@@ -694,10 +655,33 @@
       </div>
     </main>
 
+    <script src="./popper.min.js.download"></script>
+    <script src="./42d5adcbca.js.download"></script>
+    <script src="./jkanban.js.download"></script>
+    <script src="./dragula.min.js.download"></script>
+    <script src="./popper.min(1).js.download"></script>
+    <script src="./choices.min.js.download"></script>
+
     <script src="script/perfect-scrollbar.min.js.download"></script>
     <script src="script/smooth-scrollbar.min.js.download"></script>
 
     <script src="script/soft-ui-dashboard.min.js.download"></script>
-    
+
+    <!-- Theme Bootstrap Icon -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
